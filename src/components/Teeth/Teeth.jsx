@@ -64,44 +64,32 @@ const Teeth = () => {
       description: "По новой прогрессивной методике",
     },
   ];
-
   return (
     <div className="container">
       <div className="relative my-11">
         {/* Слайдер */}
         <Slider {...sliderSettings} ref={sliderRef}>
-          {slidesContent.map((content, index) => (
-            <div
-              className="w-full h-[392px] bg-[#2CB2BB] flex items-center justify justify-between px-11"
-              key={index}
-            >
-              <div className="flex items-center justify-between px-[60px]">
-                <div className="">
-                  <h1 className="text-4xl text-white font-bold">
-                    {content.title}
-                  </h1>
-                  <h1 className="text-2xl my-4 text-white font-bold">
-                    {content.price}
-                  </h1>
-                  <h1 className=" font-normal my-3 text-white">
-                    {content.description}
-                  </h1>
-                  <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500  group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white hover:scale-110 duration-200 my-7">
-                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      Узнать подробнее
-                    </span>
-                  </button>
-                </div>
-                <img
-                  className="pr-24"
-                  src="https://s3-alpha-sig.figma.com/img/14bf/cf0a/7fef31556f8b8063812802f6af78dc66?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qZAL06VEjWCDvnAVOe1vcGvPvhrNYoik~0vAbL9ekPGxV19qqy0aSdyEkgoOFGuhEyi6U7xn5vDXt444PyR9Eu2mGOolmGZzdjVhILrfBHATXG47AOXoX6ilAY6GMOy1Pjz1md0X4ZKcUnru8FUPqII6ybwdn~Ixc-K2ISSLo4TKqwrkLsdRUiGSIgULmwD3PYTNn7DrtjGGa6adP8yWYM-CJLFeH30JZk18raBGaaCwB0VRa6kmlpnjVbT83oavfaDHkTkVrzxB8xW~Iu8VO8B5UyHlWaMS4L3rmgXMNRvy67nkq4aM3SURAtK24D1H25367DmpIKnQhZTWUL2qnQ__"
-                  alt="img"
-                />
-              </div>
-            </div>
-          ))}
-        </Slider>
-
+        {slidesContent.map((content, index) => (
+          <div
+            className="w-full h-[392px] bg-[#2CB2BB] flex items-center justify justify-between px-11"
+            key={index}
+          >
+            <div className="flex items-center justify-between px-[60px]">
+              <div className="">
+              <h1 className="text-4xl text-white font-bold">
+                  {content.title}
+                </h1>
+                <h1 className="text-2xl my-4 text-white font-bold">
+                  {content.price}
+                </h1>
+                <h1 className=" font-normal my-3 text-white">
+                  {content.description}
+                </h1>
+                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500  group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white hover:scale-110 duration-200 my-7">
+                  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Узнать подробнее
+                  </span>
+                </button>
         {/* Навигация по слайдам */}
         <div
           className="flex justify-between px-11 "
