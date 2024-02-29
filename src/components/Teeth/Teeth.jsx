@@ -198,3 +198,5 @@ const Teeth = () => {
 };
 
 export default Teeth;
+
+/////////////////////////////////////////AZIRET 1
