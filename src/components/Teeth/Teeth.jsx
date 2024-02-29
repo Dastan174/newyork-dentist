@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GrPrevious, GrNext } from "react-icons/gr";
 import "./teeth.css";
 
 const Teeth = () => {
@@ -51,7 +50,7 @@ const Teeth = () => {
 
   return (
     <div className="container">
-        <div className="relative">
+        <div className="relative my-11">
 
       {/* Слайдер */}
       <Slider {...sliderSettings} ref={sliderRef}>
