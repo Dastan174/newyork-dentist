@@ -67,7 +67,7 @@ const Teeth = () => {
 
   return (
     <div className="container">
-      <div className="relative">
+      <div className="relative my-11">
         {/* Слайдер */}
         <Slider {...sliderSettings} ref={sliderRef}>
           {slidesContent.map((content, index) => (

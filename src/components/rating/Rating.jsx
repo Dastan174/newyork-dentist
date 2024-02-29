@@ -8,6 +8,7 @@ import rating5 from "../../images/rating5.svg";
 import rating6 from "../../images/rating6.svg";
 import rating7 from "../../images/rating7.svg";
 import rating8 from "../../images/rating8.svg";
+import sectionPhone from "../../images/section-phone.svg";
 
 function Rating() {
   const data = [
@@ -42,7 +43,11 @@ function Rating() {
               ))}
             </div>
           </div>
-          <div className="rating__block__right"></div>
+          <div className="rating__block__right">
+            <div className="rating__block-img-right">
+              <img src={sectionPhone} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

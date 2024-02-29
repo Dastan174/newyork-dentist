@@ -10,8 +10,8 @@ const Home = () => {
       <Index1 />
       <Index2 />
       <Index3 />
-      <Rating />
       <Teeth />
+      <Rating />
     </div>
   );
 };
