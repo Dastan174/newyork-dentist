@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GrPrevious, GrNext } from "react-icons/gr";
 import "./teeth.css";
 
 const Teeth = () => {
@@ -64,6 +63,7 @@ const Teeth = () => {
       description: "По новой прогрессивной методике",
     },
   ];
+
   return (
     <div className="container">
       <div className="relative my-11">
@@ -100,6 +100,7 @@ const Teeth = () => {
             </div>
           ))}
         </Slider>
+
         {/* Навигация по слайдам */}
         <div
           className="flex justify-between px-11 "
