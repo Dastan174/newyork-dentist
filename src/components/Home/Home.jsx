@@ -17,5 +17,5 @@ const Home = () => {
     </div>
   );
 };
-
+//aziret
 export default Home;
