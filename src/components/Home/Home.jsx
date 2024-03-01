@@ -9,6 +9,8 @@ import News from "../news/News";
 import Form1Home from "../form1Home/Form1Home";
 import Form2Home from "../form2Home/Form2Home";
 import Doctor from "../DoctorMen/Doctor";
+import Footer from "../FooterEnd/Footer";
+import Footer2 from "../FooterEnd/Footer2";
 const Home = () => {
   return (
     <div>
@@ -19,9 +21,11 @@ const Home = () => {
       <Rating />
       <Our />
       <News />
-      {/* <Form1Home />
-      <Form2Home /> */}
+      <Form1Home />
       <Doctor/>
+      <Form2Home />
+      <Footer/>
+      <Footer2/>
     </div>
   );
 };
