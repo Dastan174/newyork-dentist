@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./teeth.css";
+import "./doctor.css"
+import { BiCheck } from "react-icons/bi";
 
-const Teeth = () => {
+const Doctor = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
@@ -42,24 +43,32 @@ const Teeth = () => {
 
   const slidesContent = [
     {
-      title: "Имплантация зубов",
-      price: "от 18 000 ₽",
-      description: "По новой прогрессивной методике",
+        num:1,
+      title: "Что надо знать, выбирая  клинику?",
+      name: "Детальная диагностика и планирование",
+      description: "Вам не должны предлагать установку имплантов в день посещения и только на основании панорамного снимка или визуального осмотра. Важна тщательная диагностика, а также проведение компьютерной томографии, сдача анализов крови.",
+      description2: "Наша стоматология работает по международным стандартам комплексной диагностики: сбор анамнеза, комплексные анализы, визуальный осмотр полости рта, анализ компьютерной томографии, фотометрия лица пациента и снятие параметров прикуса. Только после этого имплантолог и ортопед могут составить предварительные планы лечения, которые впоследствии нужно будет уточнить в процессе компьютерного моделирования и дополнительной диагностики по назначению",
     },
     {
-      title: "Сертификаты со скидкой",
-      price: "от 18 000 ₽",
-      description: "По новой прогрессивной методике",
+        num:2,
+      title: "Что надо знать, выбирая клинику?",
+      name: "Детальная диагностика и планирование",
+      description: "Вам не должны предлагать установку имплантов в день посещения и только на основании панорамного снимка или визуального осмотра. Важна тщательная диагностика, а также проведение компьютерной томографии, сдача анализов крови.",
+      description2: "Наша стоматология работает по международным стандартам комплексной диагностики: сбор анамнеза, комплексные анализы, визуальный осмотр полости рта, анализ компьютерной томографии, фотометрия лица пациента и снятие параметров прикуса. Только после этого имплантолог и ортопед могут составить предварительные планы лечения, которые впоследствии нужно будет уточнить в процессе компьютерного моделирования и дополнительной диагностики по назначению",
     },
     {
-      title: "Новые услуги",
-      price: "от 18 000 ₽",
-      description: "По новой прогрессивной методике",
+        num:3,
+      title: "Что надо знать, выбирая клинику?",
+      name: "Детальная диагностика и планирование",
+      description: "Вам не должны предлагать установку имплантов в день посещения и только на основании панорамного снимка или визуального осмотра. Важна тщательная диагностика, а также проведение компьютерной томографии, сдача анализов крови.",
+      description2: "Наша стоматология работает по международным стандартам комплексной диагностики: сбор анамнеза, комплексные анализы, визуальный осмотр полости рта, анализ компьютерной томографии, фотометрия лица пациента и снятие параметров прикуса. Только после этого имплантолог и ортопед могут составить предварительные планы лечения, которые впоследствии нужно будет уточнить в процессе компьютерного моделирования и дополнительной диагностики по назначению",
     },
     {
-      title: "Бесплатная консультация",
-      price: "от 18 000 ₽",
-      description: "По новой прогрессивной методике",
+        num:4,
+      title: "Что надо знать, выбирая клинику?",
+      name: "Детальная диагностика и планирование",
+      description: "Вам не должны предлагать установку имплантов в день посещения и только на основании панорамного снимка или визуального осмотра. Важна тщательная диагностика, а также проведение компьютерной томографии, сдача анализов крови.",
+      description2: "Наша стоматология работает по международным стандартам комплексной диагностики: сбор анамнеза, комплексные анализы, визуальный осмотр полости рта, анализ компьютерной томографии, фотометрия лица пациента и снятие параметров прикуса. Только после этого имплантолог и ортопед могут составить предварительные планы лечения, которые впоследствии нужно будет уточнить в процессе компьютерного моделирования и дополнительной диагностики по назначению",
     },
   ];
 
@@ -70,39 +79,27 @@ const Teeth = () => {
         <Slider {...sliderSettings} ref={sliderRef}>
           {slidesContent.map((content, index) => (
             <div
-              className="w-full h-[392px] bg-[#2CB2BB] flex items-center justify justify-between px-11"
+              className="w-full h-[656px] bg-[#F2FAFB] flex items-center justify justify-between px-4"
               key={index}
             >
               <div className="flex items-center justify-between px-[60px]">
-                <div className="">
-                  <h1 className="text-4xl text-white font-bold">
+                <div className="w-[510px]">
+                  <h1 className="text-3xl text-black font-bold pt-14">
                     {content.title}
                   </h1>
-                  <h1 className="text-2xl my-4 text-white font-bold">
-                    {content.price}
-                  </h1>
-                  <h1 className=" font-normal my-3 text-white">
-                    {content.description}
-                  </h1>
-                  <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500  group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white hover:scale-110 duration-200 my-7">
-                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      Узнать подробнее
-                    </span>
-                  </button>
-                </div>
-                <img
-                  className="pr-24"
-                  src="https://s3-alpha-sig.figma.com/img/14bf/cf0a/7fef31556f8b8063812802f6af78dc66?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qZAL06VEjWCDvnAVOe1vcGvPvhrNYoik~0vAbL9ekPGxV19qqy0aSdyEkgoOFGuhEyi6U7xn5vDXt444PyR9Eu2mGOolmGZzdjVhILrfBHATXG47AOXoX6ilAY6GMOy1Pjz1md0X4ZKcUnru8FUPqII6ybwdn~Ixc-K2ISSLo4TKqwrkLsdRUiGSIgULmwD3PYTNn7DrtjGGa6adP8yWYM-CJLFeH30JZk18raBGaaCwB0VRa6kmlpnjVbT83oavfaDHkTkVrzxB8xW~Iu8VO8B5UyHlWaMS4L3rmgXMNRvy67nkq4aM3SURAtK24D1H25367DmpIKnQhZTWUL2qnQ__"
-                  alt="img"
-                />
-              </div>
-            </div>
-          ))}
-        </Slider>
+
+
+
+
+
+<div className="flex items-center justify-between gap-11">
 
         <div
-          className="flex justify-between px-11 "
-          style={{ textAlign: "center", marginTop: "20px" }}
+          className="flex gap-2 "
+          style={{ 
+        
+            
+            textAlign: "center", marginTop: "20px" }}
         >
           {slidesContent.map((content, index) => (
             <span
@@ -114,16 +111,73 @@ const Teeth = () => {
                 marginRight: "10px",
                 fontWeight: currentSlide === index ? "bold" : "normal",
                 color: currentSlide === index ? "black" : "#2CB2BB",
-                borderBottom:
-                  currentSlide === index ? "2px solid black" : "none",
               }}
             >
-              {content.title}
+             <button style={{
+                fontWeight:"700",
+                color:
+                currentSlide === index ? "white" : "#2CB2BB",
+                  background:
+                  currentSlide === index ? "#2CB2BB" : "white",
+             }} class="btn text-[#2CB2BB]"> {content.num}
+</button>
             </span>
           ))}
         </div>
+<div className="">
 
-        <div
+<button
+onClick={handleNextSlide}
+ className="relative pt-5 inline-flex items-center text-lg justify-center w-[202px] from-cyan-500  group-hover:from-cyan-500 group-hover:to-[#2CB2BB] hover:text-[#2CB2BB] dark:text-[#2CB2BB] hover:scale-110 duration-200 my-7">
+                    <span className="relative font-bold px-5 text-sm py-[13px] transition-all ease-in duration-75 bg-[#2CB2BB] text-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Следующий шаг
+                    </span>
+                  </button>
+          </div>
+
+          </div>
+
+
+
+
+
+                  <h1 className="text-lg my-4 text-black font-bold">
+                    {content.name}
+                  </h1>
+                  <div className="flex items-start gap-3">
+                    <span className="mt-3 text-[#2CB2BB]">
+                  <BiCheck />
+                    </span>
+                      
+
+                  <h1 className="tt font-normal my-3 text-black">
+                    {content.description}
+                  </h1>
+                  </div>
+                
+                <div className="flex items-start gap-3">
+                  <span className="mt-3 text-[#2CB2BB]">
+                <BiCheck />
+                  </span>
+
+                  <h1 className="tt font-normal my-3 text-black">
+                    {content.description2}
+                  </h1>
+                </div>
+              
+                </div>
+                <img
+                  className="w-[386px] h-[612px] mb-[-100px]"
+                  src="https://s3-alpha-sig.figma.com/img/c1a1/2765/8cca3b0bcec00a13f839629d8ce068fd?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZmPo6~aGj~-VngyQcvS39aCVlKXCfTW2oDwQBOfIw~bwsvtnzJCGrYepfpIuw3CRwPyLGcN7REedSXyem4usMZ~USGFv-Ytz61EIkSqPS8dTcugp2kPULjLU6vBKqlS6Ho3gsDWSMPjo4FnovdSs6dBibx9r2kk--8Zj3wM2utDAWhYG-qWnrYko-P5dw0zNKnAHBlodDXfoBA0V8AzIfACpIz0AjaPSBYKcuMS8mU4VSHcnh-6akku4m1wUUi9nRiHqlkeYrij3mFBBtkhY0vIcPNCB2mW4cWn1KfWs1awz3NVi08CGaBrLt0tfb9z93RwuCHHU1-IZn5M6kSYj-w__"
+                  alt="img"
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
+
+
+        {/* <div
           className="flex gap-2 absolute right-5 bottom-16"
           style={{ textAlign: "center", marginTop: "20px" }}
         >
@@ -208,12 +262,12 @@ const Teeth = () => {
               </a>
             </div>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default Teeth;
+export default Doctor;
 
 /////////////////////////////////////////AZIRET 1
