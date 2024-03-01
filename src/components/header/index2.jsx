@@ -10,24 +10,39 @@ import headerMedal from "../../images/medal.svg";
 import headerReview from "../../images/review.svg";
 import headerPansle from "../../images/pansle.svg";
 
-
 function Index2() {
   return (
     <div className="header2">
       <div className="container">
         <div className="header2__content">
           <div className="header__logo">
-            <div className="header__logo-img">
-              <img src={header2Logo} alt="" />
+            <div className="header__block flex">
+              <div className="header__logo-img">
+                <img src={header2Logo} alt="" />
+              </div>
+              <div className="header__end-social">
+                <img src={header2Class} alt="" />
+                <img src={header2Insta} alt="" />
+                <img src={header2Vk} alt="" />
+                <img src={header2Facebook} alt="" />
+                <img src={header2You} alt="" />
+              </div>
             </div>
           </div>
-            <div className="header__end-social">
-              <img src={header2Class} alt="" />
-              <img src={header2Insta} alt="" />
-              <img src={header2Vk} alt="" />
-              <img src={header2Facebook} alt="" />
-              <img src={header2You} alt="" />
+          <div className="header__logo">
+            <div className="flex header__none">
+              <div className="header__logo-img">
+                <img src={header2Logo} alt="" />
+              </div>
+              <div className="header__end-social">
+                <img src={header2Class} alt="" />
+                <img src={header2Insta} alt="" />
+                <img src={header2Vk} alt="" />
+                <img src={header2Facebook} alt="" />
+                <img src={header2You} alt="" />
+              </div>
             </div>
+          </div>
           <div className="header__end">
             <div className="header__end-btns">
               <button>
