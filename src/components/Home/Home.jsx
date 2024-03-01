@@ -5,15 +5,21 @@ import Index2 from "../header/index2";
 import Index3 from "../header/index3";
 import Rating from "../rating/Rating";
 import Our from "../Our/Our";
+import News from "../news/News";
+import Form1Home from "../form1Home/Form1Home";
+import Form2Home from "../form2Home/Form2Home";
 const Home = () => {
   return (
     <div>
       <Index1 />
       <Index2 />
       <Index3 />
-      <Teeth />
+      {/* <Teeth />
       <Rating />
       <Our />
+      <News />
+      <Form1Home />
+      <Form2Home /> */}
     </div>
   );
 };
