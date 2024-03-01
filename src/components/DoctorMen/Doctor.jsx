@@ -9,7 +9,6 @@ const Doctor = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
-  // Настройки слайдера
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -19,14 +18,7 @@ const Doctor = () => {
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
-  //   useEffect(() => {
-  //     // Автоматическое переключение слайдов каждые 3 секунды
-  //     const interval = setInterval(() => {
-  //       sliderRef.current.slickNext(); // Переходим к следующему слайду
-  //     }, 3000);
 
-  //     return () => clearInterval(interval);
-  //   }, []);
 
   const handleTitleClick = (index) => {
     setCurrentSlide(index);
