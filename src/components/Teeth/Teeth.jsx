@@ -40,7 +40,6 @@ const Teeth = () => {
     sliderRef.current.slickNext();
   };
 
-  // Контент слайдов
   const slidesContent = [
     {
       title: "Имплантация зубов",
@@ -101,7 +100,6 @@ const Teeth = () => {
           ))}
         </Slider>
 
-        {/* Навигация по слайдам */}
         <div
           className="flex justify-between px-11 "
           style={{ textAlign: "center", marginTop: "20px" }}
