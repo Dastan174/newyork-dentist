@@ -5,7 +5,7 @@ const myContext = createContext();
 export const useMyContext = () => useContext(myContext);
 
 const MyContext = ({ children }) => {
-  const values = {};
+  let values = {};
   return <myContext.Provider value={values}>{children}</myContext.Provider>;
 };
 
