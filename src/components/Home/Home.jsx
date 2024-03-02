@@ -11,6 +11,8 @@ import Form2Home from "../form2Home/Form2Home";
 import Doctor from "../DoctorMen/Doctor";
 import Footer from "../FooterEnd/Footer";
 import Footer2 from "../FooterEnd/Footer2";
+import Footer3 from "../FooterEnd/Footer3";
+import Footer4 from "../FooterEnd/Footer4";
 const Home = () => {
   return (
     <div>
@@ -26,6 +28,8 @@ const Home = () => {
       <Form2Home />
       <Footer/>
       <Footer2/>
+      <Footer3/>
+      <Footer4/>
     </div>
   );
 };

@@ -10,15 +10,17 @@ const Doctor = () => {
   const sliderRef = useRef(null);
 
   const sliderSettings = {
-    dots: false,
-    infinite: false,
-    speed: 1300,
+
+   dots: true,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: false,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
-
-
 
   const handleTitleClick = (index) => {
     setCurrentSlide(index);

@@ -25,7 +25,7 @@ const Our = () => {
             Опытных <br /> сотрудников
           </h5>
         </div>
-        <div className="flex items-center flex-wrap gap-5">
+        <div className="flex items-center flex-wrap gap-4">
           <div className="doctor">
             <h1>
               <TbUserSquare />
@@ -60,7 +60,7 @@ const Our = () => {
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Our;
