@@ -13,6 +13,7 @@ import Footer from "../FooterEnd/Footer";
 import Footer2 from "../FooterEnd/Footer2";
 import Footer3 from "../FooterEnd/Footer3";
 import Footer4 from "../FooterEnd/Footer4";
+import Social from "../social/Social";
 const Home = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const Home = () => {
       <Our />
       <News />
       <Form1Home />
+      <Social />
       <Doctor />
       <Form2Home />
       <Footer />
