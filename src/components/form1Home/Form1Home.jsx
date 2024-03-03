@@ -65,7 +65,7 @@ function Form1Home() {
                     : ""
                 } `}
               >
-                {objDataNum.length > 0 ? (
+                {!objDataNum.length > 0 ? (
                   <button>Отправить</button>
                 ) : (
                   <button
