@@ -2,14 +2,14 @@ import React from "react";
 import "./footer.css";
 import { FaRegMap } from "react-icons/fa";
 import { FiMessageSquare } from "react-icons/fi";
-
+import "./footerADAP.css"
 
 const Footer = () => {
   return (
     <div className="bg-[#F2FAFB]">
       <div className="container">
         <div className="py-5">
-          <div className="flex items-center gap-5">
+          <div className="apa flex items-center justify-center flex-wrap gap-5">
             <div className="w-[405px]">
               <p className="text-sm">
                 Проконсультируем вас по условиям и стоимости лечения, подберём
@@ -19,7 +19,7 @@ const Footer = () => {
                 Консультация займёт всего 30–40 минут.
               </p>
             </div>
-            <div className="bo w-[386px] h-[100px] bg-white flex items-center justify-center gap-5">
+            <div className=" how bo w-[316px] h-[90px] bg-white flex items-center justify-center gap-5">
               <span className="text-5xl text-[#2CB2BB]">
                 <FaRegMap />
               </span>
@@ -27,7 +27,7 @@ const Footer = () => {
                 Ближайшие филиалы <br /> стоматологии
               </p>
             </div>
-            <div className="bo w-[386px] h-[100px] bg-white flex items-center justify-center gap-5">
+            <div className=" how bo w-[316px] h-[90px] bg-white flex items-center justify-center gap-5">
               <span className="text-5xl text-[#2CB2BB]">
                 <FiMessageSquare />
               </span>
