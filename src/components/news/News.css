@@ -41,7 +41,7 @@
 .newCard {
   padding: 25px 20px;
   max-width: 284px;
-  height: 264px;
+  height: 120%;
   border-radius: 8px;
   background: rgb(242, 250, 251);
 }
@@ -49,4 +49,20 @@
   margin-top: 47px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1134px) {
+  .newCard h3 {
+    font-size: 12px;
+  }
+  .newCard p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 842px) {
+  .new__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-gap: 20px;
+  }
 }
