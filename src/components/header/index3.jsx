@@ -49,7 +49,7 @@ function Index3() {
             </li>
           </nav>
           <label for="burger" class="burger">
-            <input
+            <input className="chex"
               onClick={() => (
                 setThisActive(ThisActive == "" ? "active" : ""),
                 setThisActiveImg(ThisActiveImg == "" ? "active" : "")

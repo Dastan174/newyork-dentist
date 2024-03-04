@@ -243,12 +243,18 @@ li {
     justify-content: space-between;
   }
 }
+.chex {
+  display: none;
+}
 @media screen and (max-width: 766px) {
   .header3-select select {
     max-width: 100px;
   }
 }
 @media screen and (max-width: 650px) {
+  .chex {
+    display: block;
+  }
   .header__end-btns button {
     width: 180px;
   }

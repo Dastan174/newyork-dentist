@@ -9,6 +9,15 @@ import header2You from "../../images/header-you.svg";
 import headerMedal from "../../images/medal.svg";
 import headerReview from "../../images/review.svg";
 import headerPansle from "../../images/pansle.svg";
+import { toast } from "react-toastify";
+
+/**
+ * 
+ * impor { AutoPlay } from 'swiper/module'
+ * 
+ * import 'swiper/au'
+ * 
+ */
 
 function Index2() {
   return (
@@ -45,7 +54,13 @@ function Index2() {
           </div>
           <div className="header__end">
             <div className="header__end-btns">
-              <button>
+              <button
+                onClick={() => {
+                  toast.error("hello", {
+                    theme: "dark",
+                  });
+                }}
+              >
                 <img src={headerMedal} alt="" />
                 Награды <br /> и сертификаты
               </button>

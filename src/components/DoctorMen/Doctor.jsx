@@ -4,10 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./doctor.css";
 import { BiCheck } from "react-icons/bi";
-import men from "../../images/men.png"
-
-
-
+import men from "../../images/men.png";
 
 const Doctor = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -90,15 +87,15 @@ const Doctor = () => {
               <div className="flex items-center justify-between px-[60px]">
                 <div className="w-[510px]">
                   <h3 className="text-3xl flex gap-3 text-black font-[700] leading-6 pt-14">
-               <div className="">
-     <div className="no">
-     <img
-                  className=" w-[66px] h-[62px] rounded-full object-cover"
-                  src={men}
-                  alt="img"
-                />
-     </div>
-               </div>
+                    <div className="">
+                      <div className="no">
+                        <img
+                          className=" w-[66px] h-[62px] rounded-full object-cover"
+                          src={men}
+                          alt="img"
+                        />
+                      </div>
+                    </div>
                     {content.title}
                   </h3>
 
@@ -175,13 +172,12 @@ const Doctor = () => {
                   </div>
                 </div>
                 <div className="blo">
-
-                <img
-                  className=" object-cover w-[386px] h-[612px] mb-[-100px]"
-                  src="https://s3-alpha-sig.figma.com/img/c1a1/2765/8cca3b0bcec00a13f839629d8ce068fd?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZmPo6~aGj~-VngyQcvS39aCVlKXCfTW2oDwQBOfIw~bwsvtnzJCGrYepfpIuw3CRwPyLGcN7REedSXyem4usMZ~USGFv-Ytz61EIkSqPS8dTcugp2kPULjLU6vBKqlS6Ho3gsDWSMPjo4FnovdSs6dBibx9r2kk--8Zj3wM2utDAWhYG-qWnrYko-P5dw0zNKnAHBlodDXfoBA0V8AzIfACpIz0AjaPSBYKcuMS8mU4VSHcnh-6akku4m1wUUi9nRiHqlkeYrij3mFBBtkhY0vIcPNCB2mW4cWn1KfWs1awz3NVi08CGaBrLt0tfb9z93RwuCHHU1-IZn5M6kSYj-w__"
-                  alt="img"
+                  <img
+                    className=" object-cover w-[386px] h-[612px] mb-[-100px]"
+                    src="https://s3-alpha-sig.figma.com/img/c1a1/2765/8cca3b0bcec00a13f839629d8ce068fd?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZmPo6~aGj~-VngyQcvS39aCVlKXCfTW2oDwQBOfIw~bwsvtnzJCGrYepfpIuw3CRwPyLGcN7REedSXyem4usMZ~USGFv-Ytz61EIkSqPS8dTcugp2kPULjLU6vBKqlS6Ho3gsDWSMPjo4FnovdSs6dBibx9r2kk--8Zj3wM2utDAWhYG-qWnrYko-P5dw0zNKnAHBlodDXfoBA0V8AzIfACpIz0AjaPSBYKcuMS8mU4VSHcnh-6akku4m1wUUi9nRiHqlkeYrij3mFBBtkhY0vIcPNCB2mW4cWn1KfWs1awz3NVi08CGaBrLt0tfb9z93RwuCHHU1-IZn5M6kSYj-w__"
+                    alt="img"
                   />
-                  </div>
+                </div>
               </div>
             </div>
           ))}

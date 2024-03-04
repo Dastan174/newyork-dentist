@@ -19,7 +19,7 @@ const Home = () => {
       <Index1 />
       <Index2 />
       <Index3 />
-      {/* <Teeth />
+      <Teeth />
       <Rating />
       <Our />
       <News />
@@ -29,7 +29,7 @@ const Home = () => {
       <Footer />
       <Footer2 />
       <Footer3 />
-      <Footer4 /> */}
+      <Footer4 />
     </div>
   );
 };
