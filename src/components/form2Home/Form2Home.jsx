@@ -20,6 +20,9 @@ function Form2Home() {
       parse_mode: "html",
       text: resMessage,
     });
+
+
+
     var secs = 10;
     var timer = setInterval(tick, 1000);
     function tick() {
@@ -27,6 +30,8 @@ function Form2Home() {
         setTime(--secs);
       }
     }
+
+    
     setObjDataName("");
     setObjDataNum("");
   }
