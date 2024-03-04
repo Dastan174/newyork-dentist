@@ -20,7 +20,7 @@ function Form2Home() {
       parse_mode: "html",
       text: resMessage,
     });
-    var secs = 10;
+    var secs = 15;
     var timer = setInterval(tick, 1000);
     function tick() {
       if (secs > 0) {
