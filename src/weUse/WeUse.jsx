@@ -10,7 +10,7 @@ function WeUse() {
         <div className="weUse__content">
           <div className="weUse__content__title">
             <p>
-              <span>Корпорация Kerr</span>, подразделение Sybron Dental
+              ш <span>Корпорация Kerr</span>, подразделение Sybron Dental
               Speciality, является одним из ведущих в мире производителей
               высококачественных расходных материалов для стоматологии. Компания
               была создана в США в 1891 году.
