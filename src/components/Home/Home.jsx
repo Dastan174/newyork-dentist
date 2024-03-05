@@ -1,4 +1,5 @@
 import React from "react";
+import Vakancies from "../vakansies/Vakancies";
 // import Requits from "../requits/Requits";
 // import WeUse1 from "../../weUse/WeUse1";
 // import Teeth from "../Teeth/Teeth";
@@ -38,6 +39,7 @@ const Home = () => {
       {/* <WeUse />
       <WeUse1 /> */}
       {/* <Requits /> */}
+      <Vakancies />
     </div>
   );
 };
